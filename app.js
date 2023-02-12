@@ -11,7 +11,7 @@ const userRoutes=require('./routes/userRoutes');
 const cookieParser = require('cookie-parser');
 
 
-app.use(cors({credentials: true, origin: 'https://tfsthefashionstore.netlify.app'}));
+app.use(cors({credentials: true, Access-Control-Allow-Origin: 'https://tfsthefashionstore.netlify.app'}));
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(cookieParser());
 app.use(express.json());
